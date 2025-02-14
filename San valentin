@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffcccb;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d63447;
+            font-size: 3em;
+        }
+        p {
+            color: #333;
+            font-size: 1.5em;
+        }
+        .heart {
+            color: #d63447;
+            font-size: 4em;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .button {
+            background-color: #d63447;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #b52b3a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Feliz San Valentín!</h1>
+        <p>En este día especial, quiero recordarte lo mucho que te amo.</p>
+        <div class="heart">❤️</div>
+        <p>Eres la persona más importante en mi vida.</p>
+        <button class="button" onclick="enviarMensaje()">Enviar Mensaje de Amor</button>
+    </div>
+
+    <script>
+        function enviarMensaje() {
+            alert('¡Te amo más que a nada en este mundo! 💖');
+        }
+    </script>
+</body>
+</html>
